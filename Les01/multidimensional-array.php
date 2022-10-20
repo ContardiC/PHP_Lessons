@@ -8,5 +8,6 @@
     echo $models[0]['price']."<br/>";
     echo $models[1]['name']."<br/>";
     echo $models[1]['price']."<br/>";
-    
+    echo $models[2]['name']."<br/>";
+    echo $models[2]['price']."<br/>";
 ?>
