@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form DB</title>
+    </head>
+    <body>
+        <form>
+            <input type="email" name="username" maxlength="60" placeholder="E-Mail" required/><br/>
+            <p>la password deve contenere almeno un numero, una lettera maiuscola, una minuscola e almeno 8 caratteri</p>
+            <input type="password" name="password" minlength="8" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
