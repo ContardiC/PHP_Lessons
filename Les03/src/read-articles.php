@@ -3,7 +3,7 @@ require '../config/db_connect.php';
 
 $query = "SELECT title,body FROM articles";
 $result = $conn->query($query);
-echo "<table>";
+echo "<table border='solid'>";
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo "<tr>";
