@@ -1,7 +1,7 @@
 <?php
 require '../config/db_connect.php';
 
-$query = "SELECT title,body FROM news";
+$query = "SELECT title,body FROM articles";
 $result = $conn->query($query);
 echo "<table>";
 if ($result->num_rows > 0) {
