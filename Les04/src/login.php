@@ -5,7 +5,8 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 $email=filter_var($email, FILTER_SANITIZE_EMAIL);
 $password=sanitizeString($password);
-$sql="SELECT * FROM users WHERE email='$email';
+
+$sql="SELECT * FROM users WHERE email='$email'";
 $result=$conn->query($sql);
 if($result->num_rows == 0){
     echo "L email utilizzata non è registrata ";
@@ -20,7 +21,6 @@ if($result->num_rows == 0){
     }else{
         echo "Spiacente le credenziali sono errate ";
     }
-    
 }
 $conn->close();
 ?>
