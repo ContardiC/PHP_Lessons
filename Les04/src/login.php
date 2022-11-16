@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../config/db_connect.php';
 require '../functions/utility.php';
 $email=$_POST['email'];
@@ -15,8 +16,9 @@ if($result->num_rows == 0){
     $sql="SELECT * FROM users WHERE email = '$email' AND password = '$password'";
     $result=$conn->query($sql);
     if($result->num_rows>0){
+        $row=$result->fetch_assoc();
         echo "Benvenuto";
-        // creazione della sessione
+        $_SESSION['id']=$row['id'];
         // redirect sulla home page per utenti che hanno fatto il login
     }else{
         echo "Spiacente le credenziali sono errate ";
