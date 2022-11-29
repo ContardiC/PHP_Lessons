@@ -5,16 +5,16 @@ function getBooks(){
         if(request.status === 200){
             var response=JSON.parse(request.responseText);
             var data='';
-            for(var i=0;i<response.books.length;i++){
+            for(var i=0;i<response.length;i++){
                 data+='<div>';
-                data+='<h4>'+response.books[i].title+'</h4>';
-                data+='<p>'+response.books[i].author+'</p>';
+                data+='<h4>'+response[i].title+'</h4>';
+                data+='<p>'+response[i].body+'</p>';
                 data+='</div>';
             }
             document.getElementById('content').innerHTML=data;
         }
     };
-    request.open('get','data/books.json',true);
+    request.open('get','src/list-articles.php',true);
     request.send(null);
 }
 var elBtnfetchData=document.getElementById('fetch-data');
