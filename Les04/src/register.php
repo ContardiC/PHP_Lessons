@@ -5,7 +5,7 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 $email=filter_var($email, FILTER_SANITIZE_EMAIL);
 $password=sanitizeString($password);
-$sql="SELECT * FROM users";
+$sql="SELECT * FROM users WHERE email='$email'";
 $result=$conn->query($sql);
 if($result->num_rows>0){
     echo "L'utente con questa email: ".$email." è già registrato";
