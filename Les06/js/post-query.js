@@ -23,7 +23,7 @@ function loaddata(){
             $('#content').html(content);
         },
         fail: function(){
-            $('#content').html('<div>Spiacenti, riporva più tardi</div>');
+            $('#content').html('<div>Spiacenti, riprova più tardi</div>');
         }
 
     });
