@@ -6,7 +6,7 @@ function loadData(){
             content+='<h3>'+val.title+'</h3>';
             content+='<p>'+val.body+'</p>';
         });
-        $('#content').append(content);
+        $('#content').html(content);
     });
 }
 $('#fetch-data').on('click',function(){
