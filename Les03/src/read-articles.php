@@ -11,6 +11,7 @@ if ($result->num_rows > 0) {
         echo "<td>". $row["body"]. "</td>";
     echo "</tr>";  
   }
+  echo "</table>";
 } else {
   echo "Non sono presenti articoli";
 }
