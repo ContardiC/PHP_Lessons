@@ -6,6 +6,11 @@
     $mul=$firstNum*$secondNum;
     $div=$firstNum/$secondNum;
 
-    //TODO: print results
+    //print results
+    echo "Addition: $add <br>";
+    echo "Subtraction: $sub <br>";
+    echo "Multiplication: $mul <br>";
+    echo "Division: $div <br>";
+    
     
 ?>
