@@ -30,7 +30,7 @@ Questa repository contiene una serie di lezioni e esercizi per imparare PHP e My
     ```
 2. Naviga nella cartella del progetto:
     ```sh
-    cd php-lessons
+    cd Php_Lessons
     ```
 3. Configura il tuo ambiente di sviluppo (es. XAMPP, MAMP, ecc.).
 
