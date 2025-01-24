@@ -10,5 +10,9 @@
     echo "NOT: $result <br>";
     $result=$firstCondition xor $secondCondition;
     echo "XOR: $result <br>";
+
+    if($firstCondition === $secondCondition){
+        
+    }
     
 ?>
