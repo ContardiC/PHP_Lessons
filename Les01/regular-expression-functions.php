@@ -1,12 +1,11 @@
 <?php
 $text = 'Using PHP\'s regular expression functions';
-$path = 'code/section_b/c05/';
+$path = 'code/spacecoding/PHP/';
 
 $match = preg_match('/PHP/', $text);
 $path  = preg_split('/\//', $path);
 $text  = preg_replace('/PHP/', '<em>PHP</em>', $text);
 ?>
-<?php include 'includes/header.php'; ?>
 <p>
   <b>Was a match found?</b><br>
   <?= ($match === 1) ? 'Yes' : 'No' ?><br><br>
@@ -19,4 +18,3 @@ $text  = preg_replace('/PHP/', '<em>PHP</em>', $text);
   <b>Updated text:</b><br>
   <?= $text ?>
 </p>
-<?php include 'includes/footer.php'; ?>

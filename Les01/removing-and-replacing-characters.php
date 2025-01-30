@@ -1,7 +1,6 @@
 <?php
-$text = '/images/uploads/';
+$text = '/images/uploads/'; 
 ?>
-<?php include 'includes/header.php'; ?>
 <p>
   <b>Remove '/' from both ends:</b><br>
   <?= trim($text, '/') ?><br>
